@@ -25,7 +25,7 @@ server {
     server_name _;
 
     location /users {
-        proxy_pass http://172.31.27.126:5000; #add backend internal Ip
+        proxy_pass http://172.31.27.126:5000;
         proxy_http_version 1.1;
 
         proxy_set_header Host $host;
